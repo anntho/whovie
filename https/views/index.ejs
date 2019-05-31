@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PWA Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="trivia, movies, free">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="free online movie trivia game with pwa functionality">
+    <link rel="stylesheet" type="text/css" href="/css/loaders.css">
+    <link rel="stylesheet" type="text/css" href="/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icon/icon-144x144.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo">whovie.org</a>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab">
+                <a href="#whovie" class="active">Whovie</a>
+            </li>
+            <li class="tab">
+                <a href="#trivia">Trivia</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+ 
+    <div class="top-wrapper row">
+        <div class="content-wrapper col s12 m8 offset-m2 l4 offset-l4">
+            <div id="whovie" class="gamebox col s12">
+                <div class="stuff">
+                    <div class="scontainer">
+                        <div class="icon">SCORE</div>
+                        <div class="stat text" id="whovie-score"></div>
+                    </div>
+                    <div class="scontainer">
+                        <div class="icon">LIVES</div>
+                        <div class="stat text" id="whovie-lives"></div>
+                    </div>
+                    <div class="scontainer">
+                        <div class="icon">ANSWERED</div>
+                        <div class="stat text" id="whovie-answered"></div>
+                    </div>
+                    <div class="scontainer">
+                        <div class="icon">REMAINING</div>
+                        <div class="stat text" id="whovie-remaining"></div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="movie-title">
+                    <div id="title" class="heavy"></div>
+                </div>
+                <br><br>
+                <div class="buttons-wrapper">
+                    <div class="buttons">
+                        <div id="a" class="button actor waves-effect z-depth point"></div>
+                        <div id="b" class="button actor waves-effect z-depth point"></div>
+                        <div id="c" class="button actor waves-effect z-depth point"></div>
+                        <div id="d" class="button actor waves-effect z-depth point"></div>
+                    </div>
+                </div>
+                <br>
+                <h6>Overview</h6>
+                <p class="divider"></p>
+                <p id="overview"></p>
+                <br>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="109087" selected>5 Star Cinema</option>
+                        <option value="84685">Animated</option>
+                        <option value="84659">Classics</option>
+                        <option value="87545">Survival</option>
+                        <option value="90134">Next Level Weird</option>
+                    </select>
+                    <label>Movie List Select</label>
+                </div>
+            </div>
+
+            <div id="trivia" class="gamebox col s12">
+                <div class="stuff">
+                    <div class="scontainer">
+                        <div class="icon">SCORE</div>
+                        <div class="stat text" id="trivia-score"></div>
+                    </div>
+                    <div class="scontainer">
+                        <div class="icon">LIVES</div>
+                        <div class="stat text" id="trivia-lives"></div>
+                    </div>
+                    <div class="scontainer">
+                        <div class="icon">ANSWERED</div>
+                        <div class="stat text" id="trivia-answered"></div>
+                    </div>
+                    <div class="scontainer">
+                        <div class="icon">REMAINING</div>
+                        <div class="stat text" id="trivia-remaining"></div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="movie-title">
+                    <div id="question"></div>
+                </div>
+                <br><br>
+                <div class="buttons-wrapper">
+                    <div class="buttons">
+                        <div id="w" class="button question waves-effect z-depth point"></div>
+                        <div id="x" class="button question waves-effect z-depth point"></div>
+                        <div id="y" class="button question waves-effect z-depth point"></div>
+                        <div id="z" class="button question waves-effect z-depth point"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script type="text/javascript" src="/js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        M.AutoInit();
+    </script>
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function() {
+                    console.log('SW Registered')
+                })
+        }
+    </script>
+    <script type="text/javascript" src="/js/sweetalert.min.js"></script>
+</body>
+</html>

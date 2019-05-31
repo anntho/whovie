@@ -1,0 +1,169 @@
+body, html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color: #fafafa;
+	background-color: #13172f;
+}
+
+/* Global ----------------------------------------- */
+/* ------------------------------------------------ */
+
+a { color: #fafafa }
+.point { cursor: pointer !important }
+.heavy { font-weight: 700 }
+.mb-blue-text { color: #8ba2fd }
+.mb-white-text { color: #fafafa }
+.white-text { color: #fff }
+.dark-blue { background-color: #190b3a }
+.light { font-weight: 100 }
+
+.z-depth {
+	-webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+	background-color: #ff5722;
+	font-weight: 700;
+}
+
+.btn:hover {
+	background-color: #ff5722;
+}
+
+.tabs .tab a:focus.active {
+	background-color: transparent;
+}
+
+.tabs .tab {
+	text-transform: none;
+	font-weight: 700;
+}
+
+.tabs {
+	display: flex;
+	justify-content: center;
+}
+
+.select-wrapper input.select-dropdown {
+	color: #fff;
+}
+
+.swal-text:last-child {
+	margin-bottom: 0;
+}
+
+.swal-text:first-child {
+	margin-top: 0;
+}
+
+/* Navigation Bar --------------------------------- */
+/* ------------------------------------------------ */
+
+nav { background-color: #11173b }
+nav a { color: #cccccc }
+nav ul a { color: #cccccc }
+
+nav .nav-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+nav .brand-logo {
+	font-size: 1.5rem;
+	color: #fafafa;
+	justify-content: center;
+}
+
+/* Top Wrapper ------------------------------------ */
+/* ------------------------------------------------ */
+
+.top-wrapper {
+	height: 80%;
+	padding-right: 4%;
+	padding-left: 4%;
+}
+
+.top-wrapper.row {
+	margin-bottom: 0;
+}
+
+/* Gamebox ---------------------------------------- */
+/* ------------------------------------------------ */
+
+.gamebox {
+	margin-top: 5%;
+}
+
+.buttons-wrapper .buttons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.buttons-wrapper .buttons .button {
+	flex-basis: 100%;
+	margin-bottom: 10px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: #fafafa;
+	color: #13172f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	padding: 10px;
+}
+
+/* Statistics ------------------------------------- */
+/* ------------------------------------------------ */
+
+.stats {
+	display: flex;
+}
+
+.stats div {
+	margin-right: 5%;
+	font-weight: 700;
+}
+
+.stuff {
+	display: flex;
+	border: 2px solid #fafafa;
+	border-radius: 5px;
+	background-color: #11173b;
+	flex-wrap: wrap;
+}
+
+.stuff div {
+	flex-basis: 50%;
+}
+
+.scontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.scontainer div {
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.scontainer .icon {
+	padding: 2%;
+	color: #cccccc;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.scontainer .text {
+	padding: 2%;
+}
+
+/* Gameover --------------------------------------- */
+/* ------------------------------------------------ */
+
+

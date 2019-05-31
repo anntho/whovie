@@ -1,0 +1,23 @@
+{
+	"name": "http",
+	"cwd": "/var/www/http/bin",
+	"script": "www",
+	"log_date_format": "YYYY-MM-DD HH:mm",
+	"error_file": "/var/www/http.log",
+	"out_file": "/var/www/http.log",
+	"merge_logs": true,
+	"watch": true,
+	"max_restarts": 2,
+	"env_local": {
+		"NODE_ENV": "Local",
+	},
+	"env_development": {
+		"NODE_ENV": "Development"
+	},
+	"env_staging": {
+		"NODE_ENV": "Staging"
+	},
+	"env_production": {
+		"NODE_ENV": "Production"
+	}
+}

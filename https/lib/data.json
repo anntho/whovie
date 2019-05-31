@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Annihilation (2018)",
+        "overview": "A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature don't apply.",
+        "choices": [
+            { "id": 1, "value": "Natalie Portman" },
+            { "id": 0, "value": "Oprah Winfrey" },
+            { "id": 0, "value": "John Boyega" },
+            { "id": 0, "value": "Tye Sheridan" }
+        ]
+    },
+    {
+        "title": "Raiders of the Lost Ark (1981)",
+        "overview": "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before Adolf Hitler's Nazis can obtain its awesome powers.",
+        "choices": [
+            { "id": 1, "value": "Harrison Ford" },
+            { "id": 0, "value": "Arnold Schwarzenegger" },
+            { "id": 0, "value": "Christopher Lloyd" },
+            { "id": 0, "value": "Dennis Quaid" }
+        ]
+    },
+    {
+        "title": "Raiders of the Lost Ark (1981)",
+        "overview": "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before Adolf Hitler's Nazis can obtain its awesome powers.",
+        "choices": [
+            { "id": 1, "value": "Harrison Ford" },
+            { "id": 0, "value": "Arnold Schwarzenegger" },
+            { "id": 0, "value": "Christopher Lloyd" },
+            { "id": 0, "value": "Dennis Quaid" }
+        ]
+    }
+]
